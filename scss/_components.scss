@@ -1,12 +1,19 @@
+// all the a tags
 a{
     text-decoration: none;
 }
+// all the a tags
 
-@mixin flexdisplay {
+
+// mixin
+@mixin flexDisplay {
     display: flex;
     flex-direction: row;
 }
+// mixin 
 
+
+// all the inputs and medias
 input{
     height: 5rem;
     outline: none;
@@ -14,4 +21,44 @@ input{
     border-left: none;
     border-top: none;
     border-bottom: none;
+    background-color: transparent;
+
+    @media (max-width:375px){
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid $color-dark;
+        outline: none; 
+    }
+
+    @media (max-width:768px){
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid $color-dark;
+        outline: none;
+    }
+
+    @media (max-width:1024px){
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        margin: 2rem 2rem;
+    }
 }
+// all the inputs and medias
+
+
+// all the p
+p{
+    font-family: 'Rosario', sans-serif;
+    font-size: 1.5rem;
+    
+    @media (max-width:1024px){
+        margin: 0 2rem;
+    }
+}
+// all the p
+
