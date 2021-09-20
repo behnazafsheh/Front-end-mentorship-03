@@ -1,0 +1,61 @@
+body{
+    background-image: url(../images/cqZbAGZ3s8NdDA15TyiuX4cG2503-w61ur33qz.jpeg);
+    background-size: cover;
+}
+.header{
+    @include flexdisplay;
+    justify-content: space-around;
+    margin: 1.5rem 0;
+
+    h1{
+        color: $color-green;
+        font-family: 'Birthstone Bounce', cursive;
+    }
+
+    .account{
+        @include flexdisplay;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-light;
+        width: 10rem;
+        height: 3rem;
+        padding: 0 3rem;
+        border-radius: 5rem;
+
+        i{
+            color:  $color-darkred;
+        }
+
+        h5{
+            color: $color-green;
+            font-family: 'Rosario', sans-serif;
+            padding: 0 1rem;
+        }
+    }
+}
+
+.searchtool{
+    @include flexdisplay;
+    justify-content: space-around;
+    background-color: $color-light;
+    width: 75%;
+    height: 15vh;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+
+    .btn-search{
+        background-color: $color-green;
+        color: $color-light;
+        border: none;
+        border-radius: 1rem;
+        width: 20%;
+    }
+
+    
+}
+
+.region{
+    display: flex;
+    flex-direction: column;
+}

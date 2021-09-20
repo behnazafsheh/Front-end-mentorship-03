@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&display=swap" rel="stylesheet">
+<!-- flatPicker cdn -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<!-- flatPicker cdn -->
+
+</head>
+<body>
+    <main>
+        <header class="header">
+            <h1>Travel With Us</h1>
+            <a href="#!"> 
+            <div class="account">
+                <h5>Account</h5>
+               <i class="fa fa-home"></i>
+            </div>
+        </a>
+        </header>
+
+        <div class="searchtool">
+            <div class="region">
+                <p>Where You Go?</p>
+                <input type="text" placeholder="select a region">
+            </div>
+            <div class="check-in">
+                <p>check in</p>
+                <input type="datetime-local" placeholder="add a date">
+            </div>
+            <div class="check-out">
+                <p>check out</p>
+                <input type="datetime-local" placeholder="add a date">
+            </div>
+            <button class="btn-search" type="submit">Search</button>
+        </div>
+
+    </main>
+    <script>
+        flatpickr("input[type=datetime-local]", {});
+    </script>
+</body>
+<!-- flatPicker script -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<!-- flatPicker cdn -->
+</html>

@@ -1,0 +1,17 @@
+a{
+    text-decoration: none;
+}
+
+@mixin flexdisplay {
+    display: flex;
+    flex-direction: row;
+}
+
+input{
+    height: 5rem;
+    outline: none;
+    border-right: 1px solid black;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
